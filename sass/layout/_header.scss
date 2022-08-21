@@ -1,0 +1,120 @@
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
+    }
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .page-nav {
+    display: flex;
+    align-items: center;
+    }
+    
+    
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color:var(--third-text-color);
+}
+.page-header__logo2{
+    color: var(--primary-text-color);
+}
+
+.page-header__logo {
+    margin-right: 93px;
+    }
+
+/* --------------------------------Menu-nav------------------------ */
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.menu__link{
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--primary-text-color);
+    cursor: pointer;
+    transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color:var(--third-text-color);
+    }
+}
+
+.menu__link_current::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color:var(--third-text-color);
+    border-radius: 2px;
+    transition: background-color var(--transition-dur-and-func);
+    bottom:-33px;
+}
+.menu__link_current{
+    color:var(--third-text-color);
+}
+.menu__link.current:hover:after{
+    background-color:var(--third-text-color);
+}
+
+.contacts-head{
+    display: flex;
+    align-items: center;
+
+}
+
+.contacts-head__phone,.contacts-head__mail{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-tex-color);
+    transition: color var(--transition-dur-and-func);
+}
+
+.contacts-head__mail:hover,
+.contacts-head__mail:focus,
+.contacts-head__phone:hover,
+.contacts-head__phone:focus{
+        color:var(--third-text-color);
+    }
+
+    .contacts-head__mail{
+        display: flex;
+        justify-content: center;
+        margin-right: 50px;
+    }
+    .contacts-head__icon1{
+        margin-right: 10px;
+        align-self: center;
+        fill:currentColor;
+    }
+.contacts-head__phone{
+    display: flex;
+    justify-content: center;
+}
+.contacts-head__icon2{
+    margin-right: 10px;
+    margin-bottom: 0px;
+    align-self: center;
+    fill:currentColor;
+}
