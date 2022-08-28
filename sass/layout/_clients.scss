@@ -1,6 +1,111 @@
+//from 768px to 1199px
+@media screen and (width: 768px) ,(max-width: 1198px){
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    width: 738px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+}
+.clients-section{
+padding-bottom: 60px;
+}
+
+.clients__link{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 226px;
+height: 92px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+transition: border var(--transition-dur-and-func), border-radius var(--transition-dur-and-func);
+
+&:hover,
+&:focus {
+fill:#2196F3;
+border: 1px solid #2196F3;
+border-radius: 4px;
+}
+}
+.clients__item{
+display: flex;
+align-items: center;
+}
+.clients__logo{
+fill:#AFB1B8;
+transition: fill var(--transition-dur-and-func);
+
+.clients__item:hover &,
+.clients__item:focus &{
+fill:#2196F3;
+}
+.clients__link:hover &,
+.clients__link:focus &{
+fill:#2196F3;
+}
+}
+}
+
+
+//0...767px
+@media screen and (max-width: 767px){
+    .clients{
+        display: flex;
+        flex-wrap: wrap;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 30px;
+}
+.clients-section{
+    padding-bottom: 60px;
+}
+
+.clients__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border var(--transition-dur-and-func), border-radius var(--transition-dur-and-func);
+    
+    &:hover,
+    &:focus {
+    fill:#2196F3;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    }
+}
+.clients__item{
+    display: flex;
+    align-items: center;
+}
+.clients__logo{
+    fill:#AFB1B8;
+    transition: fill var(--transition-dur-and-func);
+    
+    .clients__item:hover &,
+    .clients__item:focus &{
+    fill:#2196F3;
+    }
+    .clients__link:hover &,
+    .clients__link:focus &{
+    fill:#2196F3;
+    }
+}
+}
+//min 1199px
+@media screen and(min-width: 1199px){
 .clients{
     display: flex;
     align-items: center;
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
     gap: 30px;
 }
 .clients-section{
@@ -41,5 +146,5 @@
     fill:#2196F3;
     }
 }
-
+}
 

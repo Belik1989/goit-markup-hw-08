@@ -1,7 +1,8 @@
 @media screen and(min-width: 1199px){
     .characteristic__list{
         display: flex;
-        flex-direction:row;
+        justify-content: center;
+        align-items: center;
         align-items: center;
         gap: 30px;
     }
@@ -12,6 +13,8 @@
         align-items: center;
         width: 270px;
         height: 120px;
+        margin-left: auto;
+        margin-right: auto;
         background-color: #F5F4FA;
         border-radius: 4px;
         margin-bottom: 30px;

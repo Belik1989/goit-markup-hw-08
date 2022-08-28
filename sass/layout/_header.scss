@@ -1,9 +1,11 @@
 
 //from 768px to 1199px
-@media screen and (min-width: 768px),(max-width:1198px){
+@media screen and (min-width: 768px){
     .mobile-menu-open {
         display: none;
     }
+}
+    @media screen and (min-width: 768px),(max-width:1198px){
     .page-header{
         padding-top:24px;
         padding-bottom: 24px;
