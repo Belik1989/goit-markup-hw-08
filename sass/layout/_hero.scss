@@ -5,7 +5,7 @@
         padding-top: 118px;
         padding-bottom: 118px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero/mobile/header-mobile.jpg');
+        url('../images/hero/mobile/header-mobile.jpg');
         background-size: cover;
         background-color: #C4C4C4;
         }
@@ -50,7 +50,7 @@
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('/images/hero/mobile/header-mobile@2x.jpg');
+    url('../images/hero/mobile/header-mobile@2x.jpg');
     }
     }
 }
@@ -61,7 +61,7 @@
         padding-top: 118px;
         padding-bottom: 118px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero/tablet/header-tablet.jpg');
+        url('../images/hero/tablet/header-tablet.jpg');
         background-size: cover;
         background-color: #C4C4C4;
         }
@@ -106,7 +106,7 @@
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('/images/hero/tablet/header-tablet@2x.jpg');
+    url('../images/hero/tablet/header-tablet@2x.jpg');
     }
     }
 
@@ -118,7 +118,7 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/images/hero/desktop/header-desktop.jpg');
+        url('../images/hero/desktop/header-desktop.jpg');
         background-size: cover;
         background-color: #C4C4C4;
     }
@@ -127,7 +127,7 @@
         screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         .hero {
         background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url('/images/hero/desktop/header-desktop2x.jpg');
+        url('../images/hero/desktop/header-desktop2x.jpg');
         }
     }
     .hero__title{
