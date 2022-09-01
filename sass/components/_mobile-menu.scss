@@ -13,14 +13,11 @@
     pointer-events:none;
     transition: opacity var(--transition-dur-and-func);
     }
-
-
 .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
-
 .mobile-menu__container{
     position: relative;
     padding-left: 40px;

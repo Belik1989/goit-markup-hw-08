@@ -1,22 +1,13 @@
-@media screen and (max-width: 1199px){
-    .service {
-        display: none;
-    }
-}
 
-@media screen and (min-width: 1199px){
-    
+@media screen and(max-width:1199px){
 .service{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 94px;
-    
+    display: none;
 }
-
-
+}
+@media screen and(min-width:1199px){
+.service{
+    padding-bottom: 94px;
+}
 .service__link{
     position:relative;
 }
