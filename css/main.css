@@ -1246,15 +1246,15 @@ body {
 }
 
 .page-footer {
-  position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  width: 100%;
   background-color: #2F303A;
 }
 
-.page-footer__container {
+.page-footer__section {
   display: flex;
-  gap: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-footer__logo2 {
@@ -1263,11 +1263,38 @@ body {
 
 .page-footer__logo {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contacts-item-box {
-  display: block;
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts-footer__location {
@@ -1292,10 +1319,6 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
   transition: color var(--transition-dur-and-func);
-}
-
-.contacts-footer {
-  margin-bottom: 9px;
 }
 
 .contacts-footer__phone {
@@ -1324,6 +1347,7 @@ body {
 .footer-socials__list {
   display: flex;
   gap: 10px;
+  margin-bottom: 60px;
 }
 
 .footer-socials__link {
@@ -1344,8 +1368,11 @@ body {
   fill: #ffffff;
 }
 
-.subscribe {
-  margin-left: auto;
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe__title {
@@ -1361,7 +1388,7 @@ body {
 }
 
 .subscribe__mail {
-  width: 358px;
+  width: 270px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1370,14 +1397,24 @@ body {
   padding-left: 16px;
   background-color: #2F303A;
   color: #ffffff;
+  margin-bottom: 20px;
   transition: border-color var(--transition-dur-and-func);
 }
 .subscribe__mail:hover, .subscribe__mail:focus {
   border-color: var(--third-text-color);
 }
 
+@media screen and (min-width: 380px) {
+  .subscribe__mail {
+    width: 350px;
+  }
+}
+
 .subscribe__items {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe__btn {
