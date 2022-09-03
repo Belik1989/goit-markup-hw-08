@@ -1,7 +1,7 @@
 .project-flex{
     display: flex;
-    gap: 20px;
-    width: 100%;
+    gap: 30px;
+    // width: 100%;
     flex-direction: column;
     @media screen and(min-width:767px) {
     flex-wrap: wrap;
@@ -16,17 +16,33 @@
 .project-card:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-card{
-        @media screen and (min-width:767px){
-        flex-basis:calc((100% - 30px )/2);
-        }
-        @media screen and (min-width:1199px){
-        flex-basis:calc((100% - 60px )/3);
+// .project-link{
+//         @media screen and (min-width:767px){
+//         weight:calc((100% - 60px )/2);
+//         }
+//         @media screen and (min-width:1199px){
+//         weight:calc((100% - 90px )/3);
+//     }
+// }
+.project-link{
+    display: block;
+    position: relative;
+}
+@media screen and (min-width: 768px){ 
+    .project__card{
+        flex-basis:calc((100% - 60px )/2);
+    }       
+} 
+
+@media screen and (min-width: 1200px) {
+    .project__card {
+    flex-basis:calc((100% - 90px )/3);
     }
+
 }
 
 .projects-titles{
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2;
     font-weight: 700;
     letter-spacing: 0.06em;
@@ -40,9 +56,9 @@
 }
 
 .project-link{
-    // display: block;
+    display: block;
     position: relative;
-    border: 1px solid #EEEEEE;
+    // border: 1px solid #EEEEEE;
     @media screen and (min-width:767px){
         display: flex;
         flex-direction: column;
@@ -50,7 +66,15 @@
     }
 }
 
-
+.project-img{
+    
+    @media screen and (min-width:300px){
+        max-width:300px;
+    }
+    @media screen and (min-width:470px){
+    max-width: 450px;
+    }
+}
 
     .project-inform{
         border: 1px solid #EEEEEE;

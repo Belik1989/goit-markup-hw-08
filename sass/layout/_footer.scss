@@ -5,6 +5,16 @@
     width: 100%;
     background-color: #2F303A;
 }
+.page-footer__section{
+    @media screen and (min-width:1199px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+}
+// .page-footer__container{
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
 .page-footer__logo2{
     color:white;
 }
@@ -58,13 +68,15 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     font-style: normal;
-    margin-bottom: 9px;
     transition: color var(--transition-dur-and-func);
 
     &:hover,
     &:focus{
     color: var(--third-text-color);
 }
+}
+.contacts-footer__item:not(:last-child){
+    margin-bottom: 9px;
 }
 
 .contacts-footer__mail, .contacts-footer__phone{
@@ -76,10 +88,6 @@
     font-style: normal;
     transition: color var(--transition-dur-and-func);
     }
-
-.contacts-footer__phone{
-    margin-bottom: 0px;
-}
 
 .contacts-footer__mail:hover,
 .contacts-footer__mail:focus,

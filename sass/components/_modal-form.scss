@@ -92,13 +92,13 @@
 }
 }
 .modal-form-check__desc {
-    display: block;
+    display: flex;
     align-items: center;
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
@@ -133,15 +133,20 @@
         
     }
 }
-.modal-form-check__desc{
-    @media screen and (min-width:480px){
-        display:flex;
-    }
-@media screen and (min-width:1199px){
+@media screen and (min-width:320px){
+    .modal-form-check__desc::before {
+        width: 25px;
+}
+}
+// .modal-form-check__desc{
+//     @media screen and (min-width:480px){
+//         display:flex;
+//     }
+// @media screen and (min-width:1199px){
     
-    font-size: 14px;
-}
-}
+//     font-size: 14px;
+// }
+// }
 .modal-form-check__link{
     color: var(--third-text-color);
     transition: color var(--transition-dur-and-func);
