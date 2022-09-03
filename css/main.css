@@ -521,7 +521,7 @@ body {
     color: #ffffff;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .mobile-menu {
     position: fixed;
     width: 100%;
@@ -1189,13 +1189,37 @@ body {
 
 .project-flex {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .project-flex {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+  }
 }
 
 .project-card:hover,
 .project-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-card {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 767px) {
+  .project-card {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .project-card {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .projects-titles {
@@ -1214,7 +1238,6 @@ body {
 }
 
 .project-link {
-  display: block;
   position: relative;
   border: 1px solid #EEEEEE;
 }
@@ -1223,11 +1246,23 @@ body {
   border: 1px solid #EEEEEE;
   border-top: none;
   padding: 20px 24px 20px 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 767px) {
+  .project-inform {
+    flex-grow: 1;
+  }
 }
 
 .project-link-img {
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 767px) {
+  .project-link-img {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .overlay {
