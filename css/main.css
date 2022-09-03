@@ -350,7 +350,7 @@ body {
   background-color: #2196F3;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 479px) {
   .modal-form-check__desc::before {
     width: 25px;
   }
