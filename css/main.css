@@ -1148,10 +1148,18 @@ body {
 
 .filters {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: left;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 767px) {
+  .filters {
+    justify-content: center;
+  }
 }
 
 .filter:hover,
